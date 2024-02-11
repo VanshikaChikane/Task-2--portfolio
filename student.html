@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System - Help Desk</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.options-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.option:hover {
+    background-color: purple;
+    transform: scale(1.05);
+    color: white;
+}
+
+.icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.option a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.info-container {
+    background: linear-gradient(to right, blue, purple);
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #333;
+    text-align: center;
+}
+
+.info-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.info-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.info-container ul {
+    list-style: none; /* Remove bullets */
+    padding: 0; /* Remove default padding */
+    margin-bottom: 10px;
+}
+
+.info-container li {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+   color: white;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="info-container">
+        <img src="icon.jpg" width="100px">
+        <h2>Welcome to the Student Management System</h2>
+        <p>Explore our services, designed to make your academic journey smoother.</p>
+        <ul>
+            <li>Effortless course registration and information</li>
+            <li>Real-time attendance tracking</li>
+            <li>Dedicated support for general inquiries</li>
+            <li>User-friendly and easily accessible</li>
+        </ul>
+        <p>Feel free to reach out if you have any questions or need assistance.</p>
+    </div>
+
+    <div class="options-container">
+             <div class="option">
+            <i class='bx bxs-user-account icon'></i>
+            <a href="login.html">Login</a>
+    </div>
+        
+          <div class="option">
+            <i class='bx bxs-graduation icon'></i>
+            <a href="register.jsp">Register</a>
+        </div>
+
+        <div class="option">
+            <i class='bx bxs-graduation icon'></i>
+            <a href="courses.jsp">Courses</a>
+        </div>
+        
+        
+                <div class="option">
+            <i class='bx bx-notepad icon'></i>
+            <a href="attendance.html">Attendance</a>
+        </div>
+       
+         <div class="option">
+            <i class='bx bx-question-mark icon'></i>
+            <a href="helpdesk.jsp">Help Desk</a>
+        </div>
+        <div class="option">
+            <i class='bx bx-log-out icon'></i>
+            <a href="logout.jsp">Logout</a>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Student Management System. All rights reserved.
+    </footer>
+</body>
+
+</html>
